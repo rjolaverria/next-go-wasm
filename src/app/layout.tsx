@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
+      <script src='/wasm_exec.js' async></script>
       <body className={inter.className}>{children}</body>
     </html>
   );
